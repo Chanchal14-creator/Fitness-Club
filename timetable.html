@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <title>DailyFit | Fitness-Table</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        body {
+
+            background: linear-gradient(to bottom, #000000, #001130, #001130, #000000);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #navbar a {
+            font-family: 'Staatliches', cursive;
+        }
+
+        #logo {
+            width: 60px;
+            clip-path: circle(50% at 50% 50%);
+        }
+
+        #navbar {
+            display: flex;
+            text-transform: uppercase;
+            align-items: center;
+            background-color: black;
+        }
+
+        .navbar {
+            padding: 20px;
+            color: beige;
+            font-size: 18px;
+        }
+
+        #logo_main {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        nav span {
+            color: beige;
+            padding-left: 750px;
+            font-size: 18px;
+            font-family: 'Staatliches', cursive;
+        }
+
+        .navbar:hover {
+            color: red;
+        }
+
+        #table1 {
+            border-spacing: 20px;
+            padding-top: 20px;
+            margin: auto;
+
+        }
+
+        .row1 {
+
+            color: palegoldenrod;
+            text-align: center;
+            background: #8a2be245;
+            padding: 8px;
+
+        }
+
+        .row2 {
+
+            color: palegoldenrod;
+            text-align: center;
+            background: rgba(255, 166, 0, 0.582);
+            padding: 8px;
+
+        }
+
+        .day {
+            color: whitesmoke;
+            text-align: center;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        #title1 {
+            color: #44c71a;
+            text-decoration: rgba(255, 166, 0, 0.582);
+            text-align: center;
+            background-image: url('https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg');
+            padding: 20px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Ropa Sans', sans-serif;
+            font-size: 42px;
+            text-shadow: -4px 6px 9px black;
+            ;
+
+        }
+
+        #table2 {
+            border-spacing: 22px;
+            border: "1";
+            margin: auto;
+
+        }
+
+        #title2 {
+            color: yellowgreen;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Ropa Sans', sans-serif;
+            font-size: 44px;
+        }
+
+        .food {
+            color: #27c397;
+            background-color: #020c30ba;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        .days {
+            color: #e91e31;
+            background-color: #0096885c;
+            padding: 8px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+
+        .row {
+            color: white;
+            background-color: #6868687a;
+            text-align: center;
+            padding: 6px;
+        }
+
+        .exerise {
+            display: flex;
+            padding: 9px;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .gif {
+            width: 90%;
+            padding-top: 10px;
+        }
+
+        .start {
+            padding: 0px;
+            text-align: center;
+            color: #009688;
+
+        }
+
+        .title3 {
+            color: #E91E63;
+            padding-left: 17px;
+            font-family: 'Ropa Sans', sans-serif;
+
+        }
+
+        .container {
+            padding: 19px 0px;
+        }
+
+        #registration {
+            color: #4caf50;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+
+        #registration:hover {
+            color: red;
+        }
+
+        .footer {
+            text-align: center;
+            color: azure;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="../index.html" id="logo_main"><img src="../assets/images/logo.jpg" alt="DailyFit" id="logo"></a>
+        <a href="../index.html" class="navbar">Home</a>
+        <a href="../faculty/faculty.html" class="navbar">Faculty</a>
+        <a href="timetable.html" class="navbar">Fitness-Table</a>
+        <a href="../contact_us/contactus.html" class="navbar">Contact Us</a>
+        <span>+91-9045865990</span>
+    </nav>
+    <div>
+        <h1 id="title1">Time Table of our GYM </h1>
+        <table id="table1" style="width:70%;" cellspacing="40px">
+            <tr class="head">
+                <th class="day">MONDAY</th>
+                <th class="day">TUESDAY</th>
+                <th class="day">WEDNESDAY</th>
+                <th class="day">THURSDAY</th>
+                <th class="day">FRIDAY</th>
+                <th class="day">SATURDAY</th>
+                <th class="day">SUNDAY</th>
+            </tr>
+            <tr>
+                <td class="row1">circuits<br>9:30-10:15</td>
+                <td class="row1">spin & abs<br>9:30-10:15</td>
+                <td class="row1">Yoga <br>12:00-13:00</td>
+                <td class="row1">Body blast<br>12:00-12:30</td>
+                <td class="row1">Advaced spin<br>12:20-12:50</td>
+                <td class="row1">leg burns and turns<br>9:00-10:00</td>
+                <td class="row1">Circiuts<br>10:30-11:00</td>
+            </tr>
+            <tr>
+                <td class="row2">Abs <br>10:15-10:30</td>
+                <td class="row2">Bootcamps<br>12:00-12:45</td>
+                <td class="row2">Zumba<br>13:00-13:45</td>
+                <td class="row2">Spin<br>12:40-13:10</td>
+                <td class="row2">Circuits<br>13:00-13:30</td>
+                <td class="row2">Yoga<br>10:00-11:00</td>
+                <td class="row2">Zumba<br>11:00-12:00</td>
+            </tr>
+            <tr>
+                <td class="row1">leg burns and turns<br>12:30-13:00</td>
+                <td class="row1">Zumba<br>13:00-13:45</td>
+                <td class="row1">Circuits<br>19:00-19:45</td>
+                <td class="row1">Abs<br>13:10-13:30</td>
+                <td class="row1">HIIT Training<br>13:00-13:45</td>
+                <td class="row1">Aerobics<br>11:00-11:45</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row2">Spin<br>13:00-13:45</td>
+                <td class="row2">Boxing Bootcamps<br>18:30-19:30</td>
+                <td class="row2">Abs<br>19:45-20:00</td>
+                <td class="row2">Spin<br>18:00-18:30</td>
+                <td class="row2">Spin<br>18:00-18:45</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row1">Aerobics<br>18:30-19:15</td>
+                <td class="row1">Spin<br>19:30-20:00<br></td>
+
+                <td></td>
+                <td class="row1">Train insane<br>18:30-19:00</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="row2">Cardioblast<br>19:20-20:50</td>
+                <td class="row2">Abs<br>20:00-20:20</td>
+
+                <td></td>
+                <td class="row2">Zumba<br>19:00-20:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div style="padding:0px 184px;">
+        <div class='container'>
+            <h1 class="title3">WORKOUT FOR BELLY FAT</h1>
+            <div class="exerise">
+
+                <div class="start">
+                    <H2>Crunches</H2>
+                    <img src="https://i.pinimg.com/originals/30/04/1d/30041df56a924326c7194762a17f52a5.gif" alt=""
+                        class="gif">
+                </div>
+                <div class="start">
+                    <H2>Lunge twist</H2>
+                    <img src="https://i.pinimg.com/originals/9b/fb/e1/9bfbe17226d85f6ca2dbedadbf278d79.gif" alt=""
+                        class="gif">
+                </div>
+                <div class="start">
+                    <H2>Burpees</H2>
+                    <img src="https://i.pinimg.com/originals/5a/a1/e9/5aa1e9657867b91a5871998b4112f7aa.gif" alt=""
+                        class="gif">
+                </div>
+                <div class="start">
+                    <H2>Plank</H2>
+                    <img src="https://i.pinimg.com/originals/8d/51/1e/8d511edb34e36c468aef1027f7642621.gif" alt=""
+                        class="gif">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class='container'>
+            <h1 class="title3">WORKOUT FOR ABS</h1>
+            <div class="exerise">
+                <div class="start">
+                    <H2>Squat</H2>
+                    <img src=" https://i.pinimg.com/originals/22/74/3f/22743ff712dd05f8c3c2bff3de183806.gif" alt=""
+                        class="gif">
+                </div>
+                <div class="start">
+                    <H2>Flutter kicks</H2>
+                    <img src="https://www.spotebi.com/wp-content/uploads/2014/10/flutter-kicks-exercise-illustration.gif"
+                        alt="" class="gif">
+                </div>
+                <div class="start">
+                    <H2>Chest press</H2>
+                    <img src="https://www.spotebi.com/wp-content/uploads/2016/02/chest-press-with-legs-extended-exercise-illustration-spotebi.gif"
+                        alt="" class="gif">
+                </div>
+                <div class="start">
+                    <H2>Stability ball rollout</H2>
+                    <img src="https://www.spotebi.com/wp-content/uploads/2016/02/stability-ball-chest-press-exercise-illustration-spotebi.gif"
+                        alt="" class="gif">
+                </div>
+                <div class="start">
+                    <H2>Plank kickback</H2>
+                    <img src="https://www.spotebi.com/wp-content/uploads/2016/02/plank-straight-arm-kickback-exercise-illustration-spotebi.gif"
+                        alt="" class="gif">
+                </div>
+
+            </div>
+        </div>
+        <div class='container'>
+            <h1 class="title3">WORKOUT FOR LEGS</h1>
+            <div class="exerise">
+                <div class="start">
+                    <H2>Deadlift</H2>
+                    <img src="https://www.spotebi.com/wp-content/uploads/2016/09/deadlift-upright-row-exercise-illustration-spotebi.gif"
+                        alt="" class="gif">
+                </div>
+
+                <div class="start">
+                    <H2>Hamstring curl</H2>
+                    <img src="https://www.spotebi.com/wp-content/uploads/2015/05/lying-hamstring-curls-exercise-illustration-spotebi.gif"
+                        alt="" class="gif">
+                </div>
+                <div class="start">
+                    <H2>Jump squat</H2>
+                    <img src="https://www.spotebi.com/wp-content/uploads/2015/08/jump-squat-exercise-illustration.gif"
+                        alt="" class="gif">
+                </div>
+                <div class="start">
+                    <H2>Walking lunge</H2>
+                    <img src="https://www.spotebi.com/wp-content/uploads/2016/12/walking-lunges-exercise-illustration-spotebi.gif"
+                        alt="" class="gif">
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <a id="registration">
+                <p>Register now to get more fabiluos gym exercise under the supervision of our best coaches</p>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="diet">
+        <h1 id="title2">Week diet plan </h1>
+
+        <table id="table2" style="width:70%;" cellspacing="40px">
+            <tr class="head">
+                <th></th>
+                <th class="days">MONDAY</th>
+                <th class="days">TUESDAY</th>
+                <th class="days">WEDNESDAY</th>
+                <th class="days">THURSDAY</th>
+                <th class="days">FRIDAY</th>
+                <th class="days">SATURDAY</th>
+                <th class="days">SUNDAY</th>
+            </tr>
+            <tr>
+                <td class="food">Breakfast</td>
+                <td class="row">Oats Banana Pancakes with
+                    Protein Shake</td>
+                <td class="row">Oatmeal with Greek Yogurt & Seasonal fruits
+                    Mango Juice</td>
+                <td class="row">Poached Eggs
+                    Whole Grain Toast
+                    Protein Shake</td>
+                <td class="row">Oatmeal with Honey
+                    Apple Juice</td>
+                <td class="row">Oatmeal
+                    Whole Grain Toast
+                    Orange Juice</td>
+                <td class="row">Oatmeal
+                    Whole Grain Toast
+                    Orange Juice</td>
+                <td class="row">Oatmeal with Nuts
+                    Smoothie</td>
+
+            </tr>
+            <tr>
+                <td class="food">Lunch</td>
+
+                <td class="row">Multigrain roti with palak chicken Avocado bell pepper salad</td>
+                <td class="row">Multigrain roti, fish curry, vegetable salad</td>
+                <td class="row">Quinoa upma, chicken and broccoli salad</td>
+                <td class="row">Grilled Chicken
+                    Salad
+                    Whole Grain Bread</td>
+                <td class="row">Grilled chicken vegetable roti rolls
+                    Green Salad</td>
+                <td class="row">Whole Grain Chicken Wrap
+                    Black Beans, Peppers & Greek Yogurt</td>
+                <td class="row">Whole wheat pasta with chicken and
+                    Green Salad</td>
+            </tr>
+            <tr>
+                <td class="food">Pre-Workout Snack</td>
+
+                <td class="row">Bananas</td>
+                <td class="row">Toast with Jam</td>
+                <td class="row">Mixed Nuts & Dried Fruits</td>
+                <td class="row">Toast with Peanut Butter</td>
+                <td class="row">Mixed Nuts & Dried Fruits</td>
+                <td class="row">Apple with peanut butter</td>
+                <td class="row">Granola or Cereal</td>
+            </tr>
+            <tr>
+                <td class="food">Dinner</td>
+
+                <td class="row">Brown rice, peas paneer curry, sprouts vegetable salad
+                </td>
+                <td class="row">Broken wheat khichidi, carrot raita, egg white, and vegetable salad
+                </td>
+                <td class="row">Lean Beef and vegetable curry, brown rice, cucumber raita
+                    Baby Potatoes
+                    Chocolate Milk</td>
+                <td class="row">Methi Chicken
+                    Brown Rice
+                    Broccoli
+                    Protein Shake</td>
+                <td class="row">Chicken Stir Fry
+                    Spring Onion, Peppers & Broccoli
+                    Chocolate Milk</td>
+                <td class="row">Keema bhurji and multigrain rotiLean Beef Mince
+                    Sweet Potato
+                    Protein Shake</td>
+                <td class="row">Fish curry, boiled green peas salad
+                    Brown Rice
+                    Garden Peas
+                    Milk</td>
+            </tr>
+
+
+
+        </table>
+    </div>
+    <hr>
+    <footer class="footer">
+        Copyright &copy; 2021 All rights reserved
+    </footer>
+</body>
+
+</html>

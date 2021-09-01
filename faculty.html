@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyFit | Faculty</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #navbar a {
+            font-family: 'Staatliches', cursive;
+        }
+
+        #logo {
+            width: 60px;
+            clip-path: circle(50% at 50% 50%);
+        }
+
+        #navbar {
+            display: flex;
+            text-transform: uppercase;
+            align-items: center;
+            background-color: #fe2222;
+        }
+
+        .navbar {
+            padding: 20px;
+            color: black;
+            font-size: 18px;
+        }
+
+        #logo_main {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        nav span {
+            color: black;
+            padding-left: 750px;
+            font-size: 18px;
+            font-family: 'Staatliches', cursive;
+        }
+
+        .navbar:hover {
+            color: white;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .content {
+            color: blanchedalmond;
+        }
+
+        h2 {
+            color: darkgoldenrod;
+        }
+
+        h3 {
+            color: darkkhaki;
+        }
+
+        /* /HEADER/ */
+
+        .container #logoimg img {
+            width: 45px;
+            height: 45px;
+            border: 0.1rem solid black;
+            border-radius: 50%;
+            margin: 1rem 1rem;
+        }
+
+        #logo h2 {
+            color: rgb(224, 69, 230);
+            margin-top: 2.5rem;
+            margin-left: 1rem;
+        }
+
+
+        nav ul {
+            overflow: auto;
+        }
+
+        nav li {
+            float: left;
+            list-style: none;
+            margin: 1.3rem 1.3rem;
+            margin-left: 7rem;
+            font-size: 140%;
+            padding-right: 2rem;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: gainsboro;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0rem;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        /* /BODY/ */
+
+        .heading {
+            margin-bottom: 2.5rem;
+            margin-top: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .heading h1 {
+            font-size: 270%;
+            color: white;
+        }
+
+        .f1 {
+            margin-bottom: 2.3rem;
+        }
+
+        .f1 img {
+            width: 12rem;
+            height: 12rem;
+            border: .1rem solid black;
+            border-radius: 50%;
+            margin-top: 0.5rem;
+        }
+
+        .f1 {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .f1 .content {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 50rem;
+            margin: auto;
+            font-size: 190%;
+            margin-top: 2rem;
+        }
+
+        .f1 h2 {
+            font-size: 250%;
+            color: rgb(51, 224, 28);
+        }
+
+        .f1 h3 {
+            font-size: 170%;
+            color: rgb(226, 73, 12);
+            margin-top: .5rem;
+        }
+
+
+
+        .sub img {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            border: .1rem solid black;
+            margin-top: 2rem;
+        }
+
+        .sub {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .sub .content {
+            width: 37rem;
+            margin: .5rem 1rem .2rem .5rem;
+            font-size: 200%;
+        }
+
+        .sub h2 {
+            font-size: 220%;
+            margin-top: 1rem;
+        }
+
+        .sub h3 {
+            font-size: 170%;
+            margin-top: .8rem;
+        }
+
+
+        .consult {
+            margin: 8rem 0 5rem 0;
+            font-size: 250%;
+            color: red;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .consultents {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        .consultents img {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            border: .1rem solid black;
+        }
+
+        .consultents .content {
+            width: 37rem;
+            margin: .5rem 1rem .2rem .5rem;
+            font-size: 200%;
+        }
+
+        .consultents h2 {
+            font-size: 220%;
+            margin-top: 1rem;
+            color: darkturquoise;
+        }
+
+        .consultents h3 {
+            font-size: 170%;
+            margin-top: .8rem;
+            color: deeppink;
+        }
+
+        .footer {
+            text-align: center;
+            color: azure;
+            padding: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="../index.html" id="logo_main"><img src="../assets/images/logo.jpg" alt="DailyFit" id="logo"></a>
+        <a href="../index.html" class="navbar">Home</a>
+        <a href="faculty.html" class="navbar">Faculty</a>
+        <a href="../time-table/timetable.html" class="navbar">Fitness-Table</a>
+        <a href="../contact_us/contactus.html" class="navbar">Contact Us</a>
+        <span>+91-9045865990</span>
+    </nav>
+    <div class="heading">
+        <h1>OUR FACULTY</h1>
+    </div>
+    <section class="main">
+        <div class="f1">
+            <img src="https://dl.dropbox.com/s/acnpl4syaohupuy/yash.jpg">
+            <h2>OUR FOUNDER</h2>
+            <h3>YASH GOYAL</h3>
+            <div class="content">
+                Yash Goyal is the leader of india's leading gym based industry.
+                He also contributed in various firms and health based industry.
+                He had been a fitness trainer in russia for 5 years.<br>
+                Studies completed from JK University, India.<br>
+                E-mail: yashcontact@gmail.com<br>
+                Phone no. 9893829410
+            </div>
+        </div>
+        <section class="sub">
+            <div class="f2">
+                <img src="https://dl.dropbox.com/s/uqjpxp3ms4xkf8o/chanchal.jpg">
+                <h2>LADIES COACH</h2>
+                <h3>CHANCHAL</h3>
+                <div class="content">
+                    Cnanchal is one of youngest coach in India.
+                    She had been working with many istitutes and guide to live healthy.
+                    Studies completed from Wam Management.<br>
+                    E-mail: chanchalcontact@gmail.com<br>
+                    Phone no. 8976409754
+                </div>
+            </div>
+            <div class="f3">
+                <img src="https://dl.dropbox.com/s/08sluv5qzbhpevg/virendra.jpg">
+                <h2>GENTS COACH</h2>
+                <h3>VIRENDRA</h3>
+                <div class="content">
+                    Virendra is the best fitess trainer and a silver medal athlete in olymics.
+                    He had guided more than 2000 man to fit there bodies.
+                    Studies completed from Tever Institute.<br>
+                    E-mail: virendracontact@gmail.com <br>
+                    Phone no. 9483289432
+                </div>
+            </div>
+            <div class="f4">
+                <img src="https://dl.dropbox.com/s/ze5mhwig72ousra/shreya.jpg">
+                <h2>SENIOR COACH</h2>
+                <h3>SHREYA</h3>
+                <div class="content">
+                    Shreya has worked under the greatest fitness gyms of russia.
+                    Currently she had been a trainer for many Actresses.
+                    She is also a fitness motivator and trainer.<br>
+                    Studies completed from KVL College.<br>
+                    E-mail: shreyacontact@gmail.com
+                </div>
+            </div>
+        </section>
+
+        <div class="consult">MEET OUR CONSULTANTS</div>
+        <section class="consultents">
+            <div class="f5">
+                <img src="https://dl.dropbox.com/s/hzdrt3tcrcqynz7/ayush.jpg">
+                <h2>MALE CONSULTANT</h2>
+                <h3>AYUSH</h3>
+                <div class="content">
+                    Any query regarding to join our company?<br>
+                    Get free suggestions from experts!<br>
+                    Call: 9829374828<br>
+                    Email: contactgym@gmail.com
+                </div>
+            </div>
+            <div class="f6">
+                <img src="https://dl.dropbox.com/s/5ua9lz3izq9lccw/mridula.jpg">
+                <h2>LADIES CONSULTANT</h2>
+                <h3>MRIDULA</h3>
+                <div class="content">
+                    Any query regarding to join our company?<br>
+                    Get free suggestions from experts!<br>
+                    Call: 98293875267<br>
+                    Email: contactgym@gmail.com
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <hr>
+    <footer class="footer">
+        Copyright &copy; 2021 All rights reserved
+    </footer>
+</body>
+
+</html>
