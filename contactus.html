@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <title>DailyFit | Contact Us</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            background-color: black;
+        }
+
+        .container {
+            bottom: 2px;
+            height: 700px;
+            padding-bottom: 8px;
+            width: 100%;
+            text-decoration: white;
+            background: rgba(0, 0, 0, 0.7) url('https://t3.ftcdn.net/jpg/03/02/56/68/360_F_302566879_xJNG5gsMkWOXmFPUhme3OWSzHmPGHq24.jpg');
+            /* background: rgba(0, 0, 0, 0.7) url(' http://intensegymindia.com/wp-content/uploads/2015/11/background.gif'); */
+            background-blend-mode: multiply;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #navbar a {
+            font-family: 'Staatliches', cursive;
+        }
+
+        #logo {
+            width: 60px;
+            clip-path: circle(50% at 50% 50%);
+        }
+
+        #navbar {
+            display: flex;
+            text-transform: uppercase;
+            align-items: center;
+            background-color: black;
+        }
+
+        .navbar {
+            padding: 20px;
+            color: beige;
+            font-size: 18px;
+        }
+
+        #logo_main {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        nav span {
+            color: beige;
+            padding-left: 750px;
+            font-size: 18px;
+            font-family: 'Staatliches', cursive;
+        }
+
+        .navbar:hover {
+            color: red;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            text-decoration-line: underline;
+            color: #f5f5f5;
+        }
+
+        .content {
+
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 2px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+
+        }
+
+        input {
+            padding-left: 40px;
+
+        }
+
+        .content1 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+
+        .content2 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            display: block;
+            padding-left: 80px;
+            margin-bottom: 20px;
+        }
+
+        .content3 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            display: block;
+            margin-bottom: 20px;
+            margin-right: 120px;
+        }
+
+        select {
+            padding-left: 30px;
+        }
+
+        .btn {
+            background: transparent;
+            height: 35px;
+            width: 75px;
+            color: red;
+            border: 2px solid white;
+            border-radius: 4px;
+            margin-top: 10px;
+            margin-left: 48%;
+            position: absolute;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .btn:hover {
+            background: blanchedalmond;
+            color: navy;
+        }
+
+        .content1 {
+            display: block;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="../index.html" id="logo_main"><img src="../assets/images/logo.jpg" alt="DailyFit" id="logo"></a>
+        <a href="../index.html" class="navbar">Home</a>
+        <a href="../faculty/faculty.html" class="navbar">Faculty</a>
+        <a href="../time-table/timetable.html" class="navbar">Fitness-Table</a>
+        <a href="contactus.html" class="navbar">Contact Us</a>
+        <span>+91-9045865990</span>
+    </nav>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="content">
+                Name : <input type="text" name="Name" placeholder=" eg Yash">
+            </div>
+            <div class="content">
+                Email : <input type="text" name="email" placeholder="yash21@gmail.com">
+            </div>
+            <div class="content"> Phone :
+                <input type="text" placeholder="91+">
+            </div>
+
+            <div class="content">Age : <input type="text" name="my age"></div>
+
+
+            <div class="content3">
+                Blood Group :
+                <label for="blood grp"> </label>
+                <select name="blood" id="blood grp">
+                    <option value="A+"> A+</option>
+                    <option value="O+">O+</option>
+                    <option value="B+">B+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="A-">A-</option>
+                    <option value="O-">O-</option>
+                    <option value="B-">B-</option>
+                    <option value="AB">AB-</option>
+
+                </select>
+            </div>
+            <div class="content2"> Gender : Male <input type="radio" name="my gender">
+                Female <input type="radio" name="my gender">
+                Other <input type="radio" name="my gender">
+            </div>
+
+            <div class="content"> Purpose :
+                <label for="GET A FREE TRAINING SESSION"> </label>
+                <select name="purpose" id="GET A FREE TRAINING SESSION">
+                    <option value="GET A FREE TRAINING SESSION"> GET A FREE TRAINING SESSION </option>
+                    <option value="JOIN THE GYM">JOIN THE GYM</option>
+                    <option value="INTRESTED IN MONTHLY PROMO">INTRESTED IN MONTHLY PROMO</option>
+                    <option value="ADVERTISE WITH US">ADVERTISE WITH US</option>
+                </select>
+            </div>
+            <div class="content1"> Your Query :<br>
+                <textarea name="my text" cols="60" rows="8"></textarea>
+            </div>
+            <btn type="submit" class="btn"> Submit </btn>
+        </form>
+    </div>
+    <hr>
+    <footer class="footer">
+        Copyright &copy; 2021 All rights reserved
+    </footer>
+
+</body>
+
+</html>
